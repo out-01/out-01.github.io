@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body style="margin: 0;">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 42.7 42.7" style="enable-background:new 0 0 42.7 42.7;" xml:space="preserve">
+    <style type="text/css">
+        <![CDATA[
+        .st0{fill:none;stroke:#7fcd77;}
+        .st1{fill:none;stroke:#7fcd77;stroke-linecap:round;stroke-linejoin:round;}
+        ]]>
+    </style>
+    <g transform="translate(-2.000000, -2.000000)">
+        <g transform="translate(13.000000, 5.000000)">
+            <path class="st0" d="M3.3,4.4v6.1c0,2.6,1.2,4.8,3.5,6.5c1.1,0.8,2.2,1.3,3.5,1.7c1.2-0.4,2.4-1,3.5-1.8c2.3-1.7,3.5-3.9,3.5-6.5V4.4c-3.1-0.2-6-1.6-7-2.1C9.4,2.8,6.4,4.3,3.3,4.4z" fill="#7FCD77"/>
+            <polyline class="st1" points="6.4,9.7 9.7,12.9 14.8,7.8"/>
+        </g>
+    </g>
+</svg>
+<script>
+ var system = {};
+var p = navigator.platform;
+var u = navigator.userAgent;
+
+system.win = p.indexOf("Win") == 0;
+system.mac = p.indexOf("Mac") == 0;
+system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+if (system.win || system.mac || system.xll) {//PC
+if (u.indexOf('Windows Phone') > -1) { //win
+} else {
+window.location.href = "https://c.pc.qq.com/pc.html";
+}
+}
+ </script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script>
+  function onBridgeReady() {
+    WeixinJSBridge.call('hideOptionMenu');
+  }
+
+  if (typeof WeixinJSBridge == "undefined") {
+    if (document.addEventListener) {
+      document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+    } else if (document.attachEvent) {
+      document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
+      document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+    }
+  } else {
+    onBridgeReady();
+  }
+</script>
+ <script src="https://uni-app.cdn.bcebos.com/wx.wechat.js?v=fgphp"></script>
